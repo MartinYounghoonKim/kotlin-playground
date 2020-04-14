@@ -1,3 +1,5 @@
+package Tutorial02
+
 class Rectangle (val height:Int, val width:Int) {
     val isSquare: Boolean
     get () {
