@@ -31,3 +31,14 @@ fun mix (c1: Color, c2: Color) =
         setOf(Color.BLUE, Color.VIOLET) -> Color.INDIGO
         else -> throw Exception("Dirty color")
     }
+
+fun mixOptimized (c1: Color, c2: Color) =
+    when {
+        (c1 == Color.RED && c2 == Color.YELLOW) ||
+        (c1 == Color.YELLOW && c2 == Color.RED) ->
+            Color.ORANGE
+        (c1 == Color.BLUE && c2 == Color.YELLOW) ||
+        (c1 == Color.YELLOW && c2 == Color.BLUE) ->
+            Color.INDIGO
+        else -> throw Exception("Dirty color")
+    }
