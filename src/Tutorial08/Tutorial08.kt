@@ -5,7 +5,9 @@ package Tutorial08
 const val UNIX_LINE_SEPARATOR = "\n"
 
 fun main() {
-
+    // Kotlin 수신 객체
+    println("Kotlin".lastChar())
 }
 
+// String 은 수신 객체 타입
 fun String.lastChar (): Char = this.get(this.length - 1)
