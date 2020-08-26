@@ -6,3 +6,8 @@ class Rectangle (val height:Int, val width:Int) {
         return height == width
     }
 }
+
+
+fun test () {
+    println(111)
+}

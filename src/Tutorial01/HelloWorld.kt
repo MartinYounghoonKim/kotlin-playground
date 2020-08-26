@@ -1,5 +1,7 @@
 package Tutorial01
 
+import Tutorial02.test
+
 fun main (args: Array<String>) {
     val immutable = "immutable" // 변경 불가능한 참조를 저장하는 변수(value)
     var mutable = "mutable" // 변경 가능한 참조 (variable)
@@ -13,5 +15,8 @@ fun main (args: Array<String>) {
     val person = Person("martin", true)
     person.name // 읽기 전용
     person.isMarried = false // 쓰기도 가능
+
+    test()
+
 }
 
